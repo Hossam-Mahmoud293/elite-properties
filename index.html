@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نخبة العقارية | شريكك الموثوق في الاستثمار العقاري</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Logo CSS -->
+    <link rel="stylesheet" href="css/logo.css" />
+
+    <!-- Preload Images -->
+    <link
+      rel="preload"
+      href="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      as="image"
+    />
+  </head>
+  <body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo elite-logo" data-aos="fade-right">
+          <div class="logo-icon"></div>
+          <div class="logo-text">
+            <span class="main">نخبة</span>
+            <span class="sub">العقارية</span>
+            <span class="english">Elite Properties</span>
+          </div>
+        </a>
+
+        <div class="nav-links">
+          <a href="#" class="active"><i class="fas fa-home"></i> الرئيسية</a>
+          <a href="properties.html"><i class="fas fa-building"></i> العقارات</a>
+          <a href="#services"><i class="fas fa-cogs"></i> خدماتنا</a>
+          <a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+          <a href="contact.html" class="contact-btn"
+            ><i class="fas fa-phone-alt"></i> اتصل بنا</a
+          >
+        </div>
+
+        <button class="mobile-menu-btn" aria-label="قائمة الهاتف">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <header class="hero">
+      <div class="hero-particles" id="particles-js"></div>
+      <div class="container">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="300">
+          <h1 class="animate-text">
+            استثمر في مستقبلك مع <span>نخبة العقارية</span>
+          </h1>
+          <p class="animate-text" data-aos-delay="100">
+            اكتشف مجموعة مختارة من أفضل العقارات في مصر بأسعار تنافسية
+          </p>
+
+          <div class="search-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="search-input">
+              <i class="fas fa-search"></i>
+              <input
+                type="text"
+                id="propertySearch"
+                placeholder="ابحث عن عقار، منطقة، أو مشروع..."
+                aria-label="بحث عن عقارات"
+                autocomplete="off"
+              />
+              <button type="button" class="search-clear" aria-label="مسح البحث">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <button type="submit" class="search-btn">
+              <span>بحث</span>
+            </button>
+            <div class="search-suggestions"></div>
+          </div>
+
+          <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+            <div class="stat-item">
+              <span class="counter" data-target="1250">0</span>
+              <p>عقار متوفر</p>
+            </div>
+            <div class="stat-item">
+              <span class="counter" data-target="850">0</span>
+              <p>عميل راضي</p>
+            </div>
+            <div class="stat-item">
+              <span class="counter" data-target="15">0</span>
+              <p>+ سنة خبرة</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down">
+        <span>مرر للأسفل</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <!-- أحدث العقارات -->
+    <section class="featured-properties section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">أحدث العقارات</h2>
+          <p class="section-subtitle">اكتشف أحدث العروض العقارية المميزة</p>
+          <div class="section-divider">
+            <span></span>
+            <i class="fas fa-home"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="property-filter" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="sale">للبيع</button>
+          <button class="filter-btn" data-filter="featured">مميز</button>
+        </div>
+
+        <div class="properties-grid">
+          <!-- سيتم إضافتها جافاسكريبت -->
+        </div>
+
+        <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+          <a href="properties.html" class="btn btn-primary btn-lg">
+            <span>عرض جميع العقارات</span>
+            <i class="fas fa-arrow-left"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- خدماتنا -->
+    <section class="services section-padding bg-light" id="services">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">خدماتنا المميزة</h2>
+          <p class="section-subtitle">نقدم لكم أفضل الخدمات العقارية</p>
+          <div class="section-divider">
+            <span></span>
+            <i class="fas fa-cogs"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>بيع العقارات</h3>
+            <p>
+              نساعدك في بيع عقارك بأفضل سعر في السوق مع ضمان أعلى عائد استثماري
+            </p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="fas fa-key"></i>
+            </div>
+            <h3>تأجير العقارات</h3>
+            <p>
+              اكتشف مجموعة واسعة من العقارات للإيجار في أفضل الأحياء والمناطق
+            </p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <i class="fas fa-search-dollar"></i>
+            </div>
+            <h3>تقييم العقارات</h3>
+            <p>تقييم دقيق وعادل لعقارك من قبل خبراء متخصصين في السوق العقاري</p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h3>استشارات عقارية</h3>
+            <p>استشارات احترافية لمساعدتك في اتخاذ القرار الاستثماري الأمثل</p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-icon">
+              <i class="fas fa-file-signature"></i>
+            </div>
+            <h3>الاستثمار العقاري</h3>
+            <p>فرص استثمارية حصرية مع ضمانات وأرباح مضمونة</p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>إدارة الممتلكات</h3>
+            <p>خدمات إدارة وإيجار العقارات باحترافية عالية</p>
+            <a href="#" class="service-link"
+              >اعرف المزيد <i class="fas fa-arrow-left"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- قسم العملاء -->
+    <section class="testimonials section-padding">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2 class="section-title">آراء عملائنا</h2>
+          <p class="section-subtitle">ماذا يقول عملاؤنا عن خدماتنا</p>
+          <div class="section-divider">
+            <span></span>
+            <i class="fas fa-quote-right"></i>
+            <span></span>
+          </div>
+        </div>
+
+        <!-- فلترة الآراء -->
+        <div
+          class="testimonials-filters"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <button class="filter-btn active" data-filter="all">الكل</button>
+          <button class="filter-btn" data-filter="buyers">المشترون</button>
+          <button class="filter-btn" data-filter="sellers">البائعون</button>
+          <button class="filter-btn" data-filter="investors">المستثمرون</button>
+        </div>
+
+        <!-- شبكة الآراء -->
+        <div class="testimonials-grid" data-aos="fade-up" data-aos-delay="200">
+          <!-- الآراء ستتم إضافتها عبر JavaScript -->
+        </div>
+
+        <!-- زر تحميل المزيد -->
+        <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+          <button class="btn btn-outline load-more-testimonials">
+            <span>عرض المزيد من الآراء</span>
+            <i class="fas fa-chevron-down"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- النشرة البريدية -->
+    <section class="newsletter section-padding bg-primary">
+      <div class="container">
+        <div class="newsletter-content" data-aos="fade-up">
+          <div class="newsletter-text">
+            <h3>اشترك في نشرتنا البريدية</h3>
+            <p>
+              احصل على آخر العروض والعقارات الجديدة مباشرة على بريدك الإلكتروني
+            </p>
+          </div>
+          <form class="newsletter-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="form-group">
+              <input type="email" placeholder="بريدك الإلكتروني" required />
+              <button type="submit" class="btn btn-light">اشتراك</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section" data-aos="fade-up">
+            <div class="footer-logo elite-logo">
+              <div class="logo-icon"></div>
+              <div class="logo-text">
+                <span class="main">نخبة</span>
+                <span class="sub">العقارية</span>
+                <span class="english">Elite Properties</span>
+              </div>
+            </div>
+            <p class="footer-about">
+              نحن شركة رائدة في مجال الاستثمار العقاري، نقدم حلولاً متكاملة
+              لعملائنا الكرام مع ضمان الجودة والشفافية.
+            </p>
+            <div class="social-links">
+              <a href="#" aria-label="فيسبوك"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" aria-label="تويتر"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="إنستغرام"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://wa.me/201001234567" aria-label="واتساب"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+              <a href="#" aria-label="يوتيوب"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="لينكد إن"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="footer-title">روابط سريعة</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-chevron-left"></i> الرئيسية</a
+                >
+              </li>
+              <li>
+                <a href="properties.html"
+                  ><i class="fas fa-chevron-left"></i> تصفح العقارات</a
+                >
+              </li>
+              <li>
+                <a href="#services"
+                  ><i class="fas fa-chevron-left"></i> خدماتنا</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fas fa-chevron-left"></i> من نحن</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fas fa-chevron-left"></i> اتصل بنا</a
+                >
+              </li>
+              <li>
+                <a href="blog.html"
+                  ><i class="fas fa-chevron-left"></i> المدونة</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="footer-title">خدماتنا</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#"><i class="fas fa-chevron-left"></i> بيع العقارات</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-left"></i> تأجير العقارات</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-left"></i> الاستثمار العقاري</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-left"></i> تقييم العقارات</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-left"></i> الاستشارات العقارية</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fas fa-chevron-left"></i> إدارة الممتلكات</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="footer-title">معلومات الاتصال</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>15 شارع النيل، التجمع الخامس، القاهرة، مصر</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <div>
+                  <a href="tel:+201001234567">01001234567</a>
+                  <a href="tel:+201002345678">01002345678</a>
+                </div>
+              </li>
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:info@elite-properties.com"
+                  >info@elite-properties.com</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-clock"></i>
+                <span>الأحد - الخميس: 9 ص - 10 م<br />الجمعة: 2 م - 10 م</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom" data-aos="fade-up">
+          <div class="footer-copyright">
+            <p>&copy; 2023 <span>نخبة العقارية</span>. جميع الحقوق محفوظة.</p>
+          </div>
+          <div class="footer-legal">
+            <a href="#">سياسة الخصوصية</a>
+            <a href="#">شروط الاستخدام</a>
+            <a href="#">سياسة الاسترجاع</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- زر العودة للأعلى -->
+      <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Counter Up -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+    <!-- Initialize AOS -->
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+        mirror: false,
+      });
+    </script>
+  </body>
+</html>

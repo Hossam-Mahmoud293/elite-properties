@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>العقارات - نخبة العقارية</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Logo CSS -->
+    <link rel="stylesheet" href="css/logo.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo elite-logo" data-aos="fade-right">
+          <div class="logo-icon"></div>
+          <div class="logo-text">
+            <span class="main">نخبة</span>
+            <span class="sub">العقارية</span>
+            <span class="english">Elite Properties</span>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+          <a href="#" class="active"
+            ><i class="fas fa-building"></i> العقارات</a
+          >
+          <a href="about.html"><i class="fas fa-info-circle"></i> من نحن</a>
+          <a href="contact.html"><i class="fas fa-phone-alt"></i> اتصل بنا</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="قائمة الهاتف">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+    <header class="page-header">
+      <div class="container">
+        <h1 data-aos="fade-up">العقارات</h1>
+        <div class="breadcrumb" data-aos="fade-up" data-aos-delay="100">
+          <a href="index.html">الرئيسية</a>
+          <span>/</span>
+          <span>العقارات</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="properties-page">
+      <div class="container">
+        <div class="filter-section" data-aos="fade-up">
+          <div class="filter-grid">
+            <div class="filter-group">
+              <label>نوع العقار</label>
+              <select id="filterType">
+                <option value="all">الكل</option>
+                <option value="sale">للبيع</option>
+                <option value="featured">مميز</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label>المنطقة</label>
+              <input
+                type="text"
+                id="filterLocation"
+                placeholder="مثال: الشيخ زايد"
+              />
+            </div>
+            <div class="filter-group">
+              <label>أقل سعر</label>
+              <input type="number" id="filterMinPrice" placeholder="من" />
+            </div>
+            <div class="filter-group">
+              <label>أعلى سعر</label>
+              <input type="number" id="filterMaxPrice" placeholder="إلى" />
+            </div>
+          </div>
+          <div class="filter-actions">
+            <button class="btn btn-primary" id="applyFilters">
+              <i class="fas fa-filter"></i> تطبيق الفلتر
+            </button>
+            <button class="btn btn-outline" id="resetFilters">
+              إعادة تعيين
+            </button>
+          </div>
+        </div>
+
+        <div class="properties-grid" data-aos="fade-up"></div>
+
+        <div class="load-more-container" data-aos="fade-up">
+          <button class="btn btn-primary load-more" id="loadMoreBtn">
+            <i class="fas fa-plus"></i> عرض المزيد
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer section-padding">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo elite-logo">
+              <div class="logo-icon"></div>
+              <div class="logo-text">
+                <span class="main">نخبة</span>
+                <span class="sub">العقارية</span>
+                <span class="english">Elite Properties</span>
+              </div>
+            </div>
+            <p class="footer-about">
+              نحن شركة رائدة في مجال الاستثمار العقاري، نقدم حلولاً متكاملة
+              لعملائنا الكرام مع ضمان الجودة والشفافية.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">روابط سريعة</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="index.html"
+                  ><i class="fas fa-chevron-left"></i> الرئيسية</a
+                >
+              </li>
+              <li>
+                <a href="properties.html"
+                  ><i class="fas fa-chevron-left"></i> العقارات</a
+                >
+              </li>
+              <li>
+                <a href="about.html"
+                  ><i class="fas fa-chevron-left"></i> من نحن</a
+                >
+              </li>
+              <li>
+                <a href="contact.html"
+                  ><i class="fas fa-chevron-left"></i> اتصل بنا</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3 class="footer-title">معلومات الاتصال</h3>
+            <ul class="contact-info">
+              <li>
+                <i class="fas fa-map-marker-alt"></i>
+                <span>15 شارع النيل، التجمع الخامس، القاهرة، مصر</span>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <div>
+                  <a href="tel:+201001234567">01001234567</a>
+                  <a href="tel:+201002345678">01002345678</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 <span>نخبة العقارية</span>. جميع الحقوق محفوظة.</p>
+        </div>
+      </div>
+      <button id="scrollToTop" class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      AOS.init({ duration: 800, easing: "ease-in-out", once: true });
+    </script>
+  </body>
+</html>
